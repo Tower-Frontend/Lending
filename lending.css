@@ -1,0 +1,51 @@
+:root {                              /* Переменная-библиотека */
+  --primary-color: #2947A9;   
+}
+
+body {
+  font-family: 'Work Sans';          /* Подключение шрифта глобально */
+}
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+}
+
+.header__content {
+  display: flex;                     /* Все элементы контента располагаются в строку */
+  margin: 16px 0;                    /* Отступы сверху и снизу для лого */
+  justify-content: space-between;    /* Избавляемся от правстранства с краев */ 
+}
+
+.header__logo {    
+  display: flex;                     /* Все элементы левой части контента располагаются в строку */
+  align-items: center;
+  gap: 14px;                         /* Расстояние между лого и текстом */
+}
+
+.header__main-text {
+  align-self: center;                /* Текст лого по центру */
+  font-weight: 700;                  /* Толщина шрифта для текста лого */
+  font-style: italic;                /* Курсив */
+  color: var(--primary-color);       /* Подключение цвета для текста лого */
+  font-size: 30px;                   /* Размер текста лого */
+}
+
+.nav__content {
+  list-style-type: none;             /* Избавляемся от точек в ненумерованном списке */
+  display: flex;                     /* Все элементы правой части контента располагаются в строку */
+  gap: 50px;                         /* Расстояние между кнопками панели навигации */
+
+}
+
+.nav__link {                        /* Класс для ссылок */
+  font-size: 18px;                  /* Высота ссылок*/
+  color: black;                   /* Изменяем цвет ссылки */
+  text-decoration: none;            /* Убираем подчеркивание с ссылок */
+}
+
+.nav__link--contactus {             /* Класс для кнопки ContactUs */
+  color: #F9995D;                 /* Цвет для кнопки ContactUs */
+  font-weight: 600px;               /* Толщина кнопки ContactUs */
+}
+
